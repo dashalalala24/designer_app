@@ -1,0 +1,51 @@
+.root {
+  width: 100vw;
+  min-height: 914px;
+  background-image: url(../../assets/cover.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 98%;
+  font-weight: 700;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 110%;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.container {
+  max-width: 1272px;
+  margin: 0 0 40px;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  color: #594f4c;
+}

@@ -1,0 +1,25 @@
+.page-enter {
+  transform: translateX(-100%);
+}
+
+.page-enter-from-right {
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
+}
+
+.page-exit {
+  transform: translateX(0);
+}
+
+.page-exit-to-left {
+  transform: translateX(-100%);
+}
+
+.page-exit-active {
+  transform: translateX(100%);
+  transition: transform 500ms ease-in-out;
+}

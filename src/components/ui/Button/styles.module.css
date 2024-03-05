@@ -1,0 +1,25 @@
+.button {
+  padding: 20px 40px;
+  border: #000 2px solid;
+  border-radius: 46px;
+  background-color: transparent;
+  max-width: max-content;
+  font-size: 18px;
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text {
+  line-height: 110%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}

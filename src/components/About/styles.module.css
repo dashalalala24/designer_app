@@ -1,0 +1,50 @@
+.root {
+  margin: 112px auto;
+  max-width: 1272px;
+  width: 100%;
+  color: #594f4c;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  max-width: 1100px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 100px 0 0;
+  display: flex;
+  gap: 64px;
+}
+
+.photo {
+  border-radius: 16px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 8px 0 0;
+  padding: 0;
+  max-width: 620px;
+  font-family: "Montserrat";
+}
