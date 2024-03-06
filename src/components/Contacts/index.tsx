@@ -1,9 +1,9 @@
 import { Button } from '../ui/Button';
 import styles from './styles.module.css';
 import photo from '../../assets/person_2.png';
-import tg from '../../assets/icons/telegram.svg';
-import wa from '../../assets/icons/whatsapp.svg';
-import mail from '../../assets/icons/mail.svg';
+// import tg from '../../assets/icons/telegram.svg';
+// import wa from '../../assets/icons/whatsapp.svg';
+// import mail from '../../assets/icons/mail.svg';
 
 export const Contacts = () => {
   return (
@@ -21,7 +21,7 @@ export const Contacts = () => {
             className={styles.link}>
             <Button
               text='Telegram'
-              icon={tg}
+              icon={'icons/telegram.svg'}
             />
           </a>
           <a
@@ -29,7 +29,7 @@ export const Contacts = () => {
             className={styles.link}>
             <Button
               text='WhatsApp'
-              icon={wa}
+              icon={'icons/whatsapp.svg'}
             />
           </a>
           <a
@@ -38,7 +38,7 @@ export const Contacts = () => {
             style={{ width: '100%' }}>
             <Button
               text='thebestdesigner@gmail.com'
-              icon={mail}
+              icon={'icons/mail.svg'}
             />
           </a>
           {/* {socials.map((social) => (

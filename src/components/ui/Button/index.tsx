@@ -6,7 +6,7 @@ type ButtonProps = {
   text: string;
   style?: CSSProperties;
   icon?: string;
-  iconStyle?: SVGProps<SVGSVGElement>;
+  iconStyle?: CSSProperties;
   variant?: 'smooth' | 'default';
 };
 
@@ -21,17 +21,17 @@ export const Button: FC<ButtonProps> = ({
     <button
       className={variant === 'smooth' ? styles.buttonSmooth : styles.button}
       style={style}>
-      {/* {icon && (
+      {icon && (
         <div
           className={styles.icon}
-          style={{ backgroundImage: `url(../../../assets/${icon})`, ...iconStyle }}></div>
-      )} */}
-      {icon && (
+          style={{ backgroundImage: `url(../../../../src/assets/${icon})`, ...iconStyle }}></div>
+      )}
+      {/* {icon && (
         <SvgIcon
           iconName={icon}
           svgProp={iconStyle}
         />
-      )}
+      )} */}
       <p
         className={styles.text}
         // className={variant === 'smooth' ? styles.textSmooth : styles.text}

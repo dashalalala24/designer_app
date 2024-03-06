@@ -37,7 +37,7 @@ export const Services = () => {
                     </div>
                     <Button
                       text='Пример документации'
-                      icon={'file'}
+                      icon={'icons/file.svg'}
                       variant='smooth'
                     />
                   </div>
