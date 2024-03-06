@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
-import logo from 'src/assets/logo/logo_minified.svg';
+import logo from '../../assets/logo/logo_minified.svg';
 import { navigation } from '../../utils/constants';
 
 export const Header = () => {

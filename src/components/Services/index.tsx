@@ -1,6 +1,6 @@
 import { Button } from '../ui/Button';
 import styles from './styles.module.css';
-import fileIcon from 'src/assets/icons/file.svg';
+import fileIcon from '../../assets/icons/file.svg';
 import { Stages } from '../Stages';
 import { services } from '../../utils/constants';
 

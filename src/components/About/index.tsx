@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import photo from 'src/assets/person.png';
+import photo from '../../assets/person.png';
 import { Button } from '../ui/Button';
 
 export const About = () => {

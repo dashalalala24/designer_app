@@ -1,9 +1,9 @@
-import cover from 'src/assets/project_cover.png';
-import pic from 'src/assets/feedback.png';
-import ticIcon from 'src/assets/icons/tic.svg';
-import tg from 'src/assets/icons/telegram.svg';
-import wa from 'src/assets/icons/whatsapp.svg';
-import mail from 'src/assets/icons/mail.svg';
+import cover from '../../assets/project_cover.png';
+import pic from '../../assets/feedback.png';
+import ticIcon from '../../assets/icons/tic.svg';
+import tg from '../../assets/icons/telegram.svg';
+import wa from '../../assets/icons/whatsapp.svg';
+import mail from '../../assets/icons/mail.svg';
 
 type navigationItemType = {
   id: number;
