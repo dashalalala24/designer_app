@@ -2,13 +2,75 @@
   max-width: 1272px;
   width: 100%;
   margin: 0 auto;
-  padding: 112px 0;
+  padding: 245px 0 114px;
 }
 
 .title {
   color: #f5eeec;
   font-weight: 600;
   font-size: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 69px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 66px 36px;
+}
+
+.listItem {
+  max-width: 278px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: baseline;
+  column-gap: 6px;
+}
+
+.icon {
+  width: 61px;
+  height: 61px;
+  margin-bottom: 12.6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.number {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+  color: rgba(245, 238, 236, 0.2);
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  width: 100%;
+  border-color: rgba(240, 219, 211, 0.3);
+}
+
+.itemTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #f5eeec;
+  margin: 0;
+  padding: 0;
+}
+
+.itemDescription {
+  font-weight: 600;
+  font-size: 16px;
+  color: #f0dbd3;
   margin: 0;
   padding: 0;
 }

@@ -1,13 +1,30 @@
 .button {
-  padding: 20px 40px;
+  padding: 20px 36px;
   border: #000 2px solid;
   border-radius: 46px;
   background-color: transparent;
-  max-width: max-content;
+  min-width: max-content;
   font-size: 18px;
   display: flex;
+  justify-content: center;
   column-gap: 8px;
   align-items: center;
+  color: #000;
+  cursor: pointer;
+}
+.buttonSmooth {
+  padding: 10px 16px;
+  border: 1px solid #544b48;
+  border-radius: 16px;
+  background-color: transparent;
+  max-width: max-content;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  align-items: center;
+  color: #594f4c;
+  cursor: pointer;
 }
 
 .icon {
@@ -22,4 +39,12 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
+/* 
+.textSmooth {
+  line-height: 110%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+} */

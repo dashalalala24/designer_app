@@ -1,5 +1,5 @@
 .root {
-  padding: 112px 0;
+  padding: 110px 0;
   margin: 0 auto;
   max-width: 1272px;
   overflow: hidden;
@@ -10,10 +10,13 @@
   font-size: 48px;
   line-height: 130%;
   color: #594f4c;
+  margin: 0;
+  padding: 0;
 }
 
 .slider {
   width: calc(100% + 32px);
+  margin: 46px 0 0;
 }
 
 .slide {
@@ -21,6 +24,10 @@
   padding-right: 32px;
   box-sizing: border-box;
   width: 100%;
+}
+
+.slide:focus-visible {
+  outline: none;
 }
 
 .photo {
@@ -33,9 +40,11 @@
   padding: 0 16px;
   max-width: 620px;
   min-height: 114px;
+  font-size: 18px;
+  line-height: 30px;
   border-right: #000 1px solid;
   text-align: end;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .author {
@@ -43,10 +52,10 @@
   line-height: 30px;
   box-sizing: border-box;
   margin: 0;
-  padding: 0 16px;
+  padding: 0;
   max-width: 620px;
   font-weight: 400;
   text-align: end;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: italic;
 }

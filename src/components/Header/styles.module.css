@@ -1,4 +1,41 @@
 .root {
   max-width: 1272px;
   background-color: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 24px;
+  margin: 62px auto 0;
+  padding: 22px 36px;
+  box-sizing: border-box;
+  z-index: 10;
+  min-height: 86px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 83px;
+  height: 43px;
+}
+
+.nav {
+  max-width: 895px;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.link {
+  font-weight: 600;
+  font-style: 16px;
+  text-decoration: none;
+  color: #594f4c;
 }

@@ -8,7 +8,7 @@
   max-width: 1272px;
   width: 100%;
   margin: 0 auto;
-  padding: 112px 0;
+  padding: 125px 0;
 }
 
 .title {
@@ -20,7 +20,7 @@
 }
 
 .cardsContainer {
-  padding: 48px 0 0;
+  padding: 60px 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -28,12 +28,12 @@
 .card {
   display: flex;
   gap: 24px;
-  min-height: 607px;
+  min-height: 606px;
   flex-direction: column;
   justify-content: space-between;
   max-width: 400px;
   width: 100%;
-  padding: 32px 24px;
+  padding: 32px 23px;
   box-sizing: border-box;
   background-color: #fcf8f8;
   border-radius: 16px;
@@ -56,15 +56,19 @@
 .cardText {
   font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 121%;
   margin: 0;
   padding: 0;
 }
 
 .cardList {
-  padding: 0 0 0 16px;
+  padding: 0 0 0 24px;
   line-height: 150%;
   margin: 0;
+}
+
+.cardListItem {
+  line-height: 22px;
 }
 
 .cardInfo {
@@ -77,7 +81,7 @@
   font-size: 24px;
   line-height: 130%;
   font-weight: 600;
-  padding: 0 0 8px;
+  padding: 0 0 5px;
   margin: 0;
 }
 
@@ -101,8 +105,8 @@
   max-width: 1272px;
   width: 100%;
   box-sizing: border-box;
-  margin: 214px auto;
-  padding: 72px 24px;
+  margin: 82px auto;
+  padding: 74px 40px;
   background-color: #fcf8f8;
   color: #594f4c;
   border-radius: 16px;
@@ -121,5 +125,5 @@
   font-weight: 500;
   font-size: 18px;
   margin: 0;
-  padding: 12px 0 0;
+  padding: 14px 0 0;
 }

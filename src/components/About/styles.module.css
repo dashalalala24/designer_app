@@ -1,5 +1,5 @@
 .root {
-  margin: 112px auto;
+  margin: 112px auto 194px;
   max-width: 1272px;
   width: 100%;
   color: #594f4c;
@@ -8,14 +8,14 @@
 .text {
   font-weight: 700;
   font-size: 32px;
-  line-height: 130%;
+  line-height: 121%;
   max-width: 1100px;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  margin: 100px 0 0;
+  margin: 117px 0 0;
   display: flex;
   gap: 64px;
 }
@@ -36,7 +36,7 @@
   line-height: 130%;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .subtitle {
@@ -45,6 +45,6 @@
   line-height: 130%;
   margin: 8px 0 0;
   padding: 0;
-  max-width: 620px;
-  font-family: "Montserrat";
+  max-width: 570px;
+  font-family: 'Montserrat';
 }

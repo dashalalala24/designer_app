@@ -1,6 +1,6 @@
 .root {
   width: 100vw;
-  min-height: 914px;
+  min-height: 934px;
   background-image: url(../../assets/cover.png);
   background-position: center;
   background-size: cover;
@@ -8,6 +8,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin-top: -172px;
 }
 
 .title {
@@ -17,7 +18,7 @@
   max-width: 800px;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .subtitle {
@@ -27,12 +28,12 @@
   max-width: 800px;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .container {
   max-width: 1272px;
-  margin: 0 0 40px;
+  margin: 0 0 50px;
   width: 100%;
   padding: 40px;
   box-sizing: border-box;

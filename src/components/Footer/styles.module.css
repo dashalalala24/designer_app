@@ -1,0 +1,44 @@
+.root {
+  width: 100vw;
+  background-color: #322d2b;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1272px;
+  width: 100%;
+  padding: 74px 0;
+  gap: 48px;
+}
+
+.logo {
+  width: 114px;
+  height: 58px;
+}
+
+.logoContainer {
+  display: flex;
+  gap: 48px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+}
+
+.text {
+  font-weight: 500;
+  font-style: 18px;
+  line-height: 121%;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
