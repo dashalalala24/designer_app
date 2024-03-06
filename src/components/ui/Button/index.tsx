@@ -1,6 +1,6 @@
-import { CSSProperties, FC, SVGProps } from 'react';
+import { CSSProperties, FC } from 'react';
 import styles from './styles.module.css';
-import SvgIcon from '../SvgIcon/SvgIcon';
+// import SvgIcon from '../SvgIcon/SvgIcon';
 
 type ButtonProps = {
   text: string;
