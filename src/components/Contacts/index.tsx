@@ -1,7 +1,7 @@
+import { socials } from '../../utils/constants';
 import { Button } from '../ui/Button';
 import styles from './styles.module.css';
-import photo from '@/assets/person_2.png';
-import { socials } from '@/utils/constants';
+import photo from 'src/assets/person_2.png';
 
 export const Contacts = () => {
   return (
