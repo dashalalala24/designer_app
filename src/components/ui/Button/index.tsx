@@ -1,6 +1,5 @@
 import { CSSProperties, FC } from 'react';
 import styles from './styles.module.css';
-
 type ButtonProps = {
   text: string;
   style?: CSSProperties;

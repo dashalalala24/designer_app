@@ -1,4 +1,4 @@
-import { stages } from '../../utils/constants';
+import { stages } from '@/utils/constants';
 import styles from './styles.module.css';
 
 export const Stages = () => {
