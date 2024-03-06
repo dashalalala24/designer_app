@@ -17,7 +17,7 @@ export const Button: FC<ButtonProps> = ({ text, style, icon, iconStyle, variant 
       {icon && (
         <div
           className={styles.icon}
-          style={{ backgroundImage: `url(../../${icon})`, ...iconStyle }}></div>
+          style={{ backgroundImage: `url(../../../assets/${icon})`, ...iconStyle }}></div>
       )}
       <p
         className={styles.text}

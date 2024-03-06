@@ -1,9 +1,5 @@
 import cover from '../assets/project_cover.png';
 import pic from '../assets/feedback.png';
-import ticIcon from '../assets/icons/tic.svg';
-import tg from '../assets/icons/telegram.svg';
-import wa from '../assets/icons/whatsapp.svg';
-import mail from '../assets/icons/mail.svg';
 
 type navigationItemType = {
   id: number;
@@ -242,7 +238,7 @@ export const stages: stageType[] = [
     id: 8,
     title: 'Новоселье',
     description: 'Ваше идеальное пространство готово :)',
-    icon: ticIcon,
+    icon: 'icons/tic.svg',
   },
 ];
 
@@ -255,7 +251,19 @@ type socialType = {
 };
 
 export const socials: socialType[] = [
-  { id: 1, type: 'link', title: 'Telegram', icon: tg, link: 'https://t.me/OlgaLazarchuk' },
-  { id: 2, type: 'link', title: 'WhatsApp', icon: wa, link: 'https://t.me/OlgaLazarchuk' },
-  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: mail },
+  {
+    id: 1,
+    type: 'link',
+    title: 'Telegram',
+    icon: 'icons/telegram.svg',
+    link: 'https://t.me/OlgaLazarchuk',
+  },
+  {
+    id: 2,
+    type: 'link',
+    title: 'WhatsApp',
+    icon: 'icons/whatsapp.svg',
+    link: 'https://t.me/OlgaLazarchuk',
+  },
+  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: 'icons/mail.svg' },
 ];
