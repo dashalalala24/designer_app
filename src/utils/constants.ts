@@ -238,7 +238,7 @@ export const stages: stageType[] = [
     id: 8,
     title: 'Новоселье',
     description: 'Ваше идеальное пространство готово :)',
-    icon: 'icons/tic.svg?react',
+    icon: 'tic',
   },
 ];
 
@@ -255,15 +255,15 @@ export const socials: socialType[] = [
     id: 1,
     type: 'link',
     title: 'Telegram',
-    icon: 'icons/telegram.svg?react',
+    icon: 'telegram',
     link: 'https://t.me/OlgaLazarchuk',
   },
   {
     id: 2,
     type: 'link',
     title: 'WhatsApp',
-    icon: 'icons/whatsapp.svg?react',
+    icon: 'whatsapp',
     link: 'https://t.me/OlgaLazarchuk',
   },
-  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: 'icons/mail.svg?react' },
+  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: 'mail' },
 ];
