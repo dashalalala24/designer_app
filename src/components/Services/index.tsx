@@ -1,6 +1,6 @@
 import { Button } from '../ui/Button';
 import styles from './styles.module.css';
-import fileIcon from '../../assets/icons/file.svg?react';
+// import fileIcon from '../../assets/icons/file.svg?react';
 import { Stages } from '../Stages';
 import { services } from '../../utils/constants';
 
@@ -37,7 +37,7 @@ export const Services = () => {
                     </div>
                     <Button
                       text='Пример документации'
-                      icon={fileIcon}
+                      icon={'icons/file.svg?react'}
                       variant='smooth'
                     />
                   </div>
