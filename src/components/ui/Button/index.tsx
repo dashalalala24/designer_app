@@ -23,6 +23,7 @@ export const Button: FC<ButtonProps> = ({
   iconStyle = {},
   variant = 'default',
 }) => {
+  console.log(iconStyle);
   return (
     <button
       className={variant === 'smooth' ? styles.buttonSmooth : styles.button}
