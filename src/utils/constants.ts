@@ -198,7 +198,7 @@ type stageType = {
   id: number;
   title: string;
   description: string;
-  icon?: FunctionComponent<SVGProps<SVGSVGElement>>;
+  icon?: string | React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 };
 
 export const stages: stageType[] = [
@@ -256,7 +256,7 @@ type socialType = {
   id: number;
   type: string;
   title: string;
-  icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  icon: string | React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   link?: string;
 };
 

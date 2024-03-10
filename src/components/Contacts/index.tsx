@@ -50,7 +50,9 @@ export const Contacts = () => {
               <Button
                 key={social.id}
                 text={social.title}
-                icon={social.icon as React.FunctionComponent<React.SVGProps<SVGSVGElement>>}
+                icon={
+                  social.icon as unknown as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+                }
                 style={social.type === 'mail' ? { width: '100%' } : {}}
               />
             </a>
