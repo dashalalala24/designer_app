@@ -4,7 +4,6 @@ import tic from '../assets/icons/tic.svg?react';
 import telegram from '../assets/icons/telegram.svg?react';
 import whatsapp from '../assets/icons/whatsapp.svg?react';
 import mail from '../assets/icons/mail.svg?react';
-import { FunctionComponent, SVGProps } from 'react';
 
 type navigationItemType = {
   id: number;
