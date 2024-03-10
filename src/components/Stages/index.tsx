@@ -2,7 +2,6 @@
 import { stages } from '../../utils/constants';
 // import SvgIcon from '../ui/SvgIcon/SvgIcon';
 import styles from './styles.module.css';
-import x from '../../';
 
 export const Stages = () => {
   return (
