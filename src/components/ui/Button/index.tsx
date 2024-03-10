@@ -5,13 +5,11 @@ import styles from './styles.module.css';
 type ButtonProps = {
   text: string;
   style?: CSSProperties;
-  icon?:
-    | string
-    | React.FunctionComponent<
-        React.SVGProps<SVGSVGElement> & {
-          title?: string | undefined;
-        }
-      >;
+  icon?: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
   variant?: 'smooth' | 'default';
 };
 
