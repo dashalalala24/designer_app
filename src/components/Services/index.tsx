@@ -15,7 +15,9 @@ export const Services = () => {
           {services.map(
             (service) =>
               service.type === 'primary' && (
-                <article className={styles.card}>
+                <article
+                  className={styles.card}
+                  key={service.id}>
                   <div className={styles.cardInfo}>
                     <h3 className={styles.cardName}>{service.name}</h3>
                     <p className={styles.cardText}>{service.description}</p>
@@ -23,8 +25,12 @@ export const Services = () => {
                       <p className={styles.cardText}>Что входит:</p>
                       {service.includes && (
                         <ul className={styles.cardList}>
-                          {service.includes.map((item) => (
-                            <li className={styles.cardListItem}>{item}</li>
+                          {service.includes.map((item, index) => (
+                            <li
+                              className={styles.cardListItem}
+                              key={index}>
+                              {item}
+                            </li>
                           ))}
                         </ul>
                       )}
@@ -51,15 +57,15 @@ export const Services = () => {
             {services.map(
               (service) =>
                 service.type === 'secondary' && (
-                  <div>
-                    <div className={styles.secondaryCardInfo}>
-                      <h3 className={styles.secondaryCardName}>{service.name}</h3>
+                  <div
+                    className={styles.secondaryCardInfo}
+                    key={service.id}>
+                    <h3 className={styles.secondaryCardName}>{service.name}</h3>
 
-                      <p className={styles.cardText}>{service.description}</p>
-                      <div>
-                        <p className={styles.cardPrice}>{service.price}</p>
-                        <p className={styles.cardText}>{service.timing}</p>
-                      </div>
+                    <p className={styles.cardText}>{service.description}</p>
+                    <div>
+                      <p className={styles.cardPrice}>{service.price}</p>
+                      <p className={styles.cardText}>{service.timing}</p>
                     </div>
                   </div>
                 )

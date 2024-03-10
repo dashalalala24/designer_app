@@ -1,5 +1,8 @@
 import cover from '../assets/project_cover.png';
 import pic from '../assets/feedback.png';
+import telegram from '../assets/icons/telegram.svg?react';
+import whatsapp from '../assets/icons/whatsapp.svg?react';
+import mail from '../assets/icons/mail.svg?react';
 
 type navigationItemType = {
   id: number;
@@ -246,7 +249,13 @@ type socialType = {
   id: number;
   type: string;
   title: string;
-  icon: string;
+  icon:
+    | string
+    | React.FunctionComponent<
+        React.SVGProps<SVGSVGElement> & {
+          title?: string | undefined;
+        }
+      >;
   link?: string;
 };
 
@@ -255,15 +264,15 @@ export const socials: socialType[] = [
     id: 1,
     type: 'link',
     title: 'Telegram',
-    icon: 'telegram',
+    icon: telegram,
     link: 'https://t.me/OlgaLazarchuk',
   },
   {
     id: 2,
     type: 'link',
     title: 'WhatsApp',
-    icon: 'whatsapp',
+    icon: whatsapp,
     link: 'https://t.me/OlgaLazarchuk',
   },
-  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: 'mail' },
+  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: mail },
 ];

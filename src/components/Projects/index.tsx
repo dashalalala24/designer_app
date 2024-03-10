@@ -12,6 +12,7 @@ export const Projects = () => {
         <div className={styles.projects}>
           {projects.map((project) => (
             <Link
+              key={project.id}
               to={project.link}
               className={styles.cover}
               style={{ backgroundImage: `url(${project.photo})` }}>
