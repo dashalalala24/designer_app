@@ -43,7 +43,7 @@ export const Services = () => {
                     </div>
                     <Button
                       text='Пример документации'
-                      icon={fileIcon}
+                      icon={fileIcon as React.FunctionComponent<React.SVGProps<SVGSVGElement>>}
                       variant='smooth'
                     />
                   </div>
