@@ -25,7 +25,7 @@ export const Button: FC<ButtonProps> = ({
         <div
           className={styles.icon}
           style={{
-            backgroundImage: `url(/src/assets/icons/${icon}.svg)`,
+            backgroundImage: `url(/assets/icons/${icon}.svg)`,
             ...iconStyle,
           }}></div>
       )}

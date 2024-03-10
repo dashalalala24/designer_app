@@ -17,7 +17,7 @@ export const Stages = () => {
             {stage.icon ? (
               <div
                 className={styles.icon}
-                style={{ backgroundImage: `url(/src/assets/icons/${stage.icon}.svg)` }}></div>
+                style={{ backgroundImage: `url(/assets/icons/${stage.icon}.svg)` }}></div>
             ) : (
               // <div className={styles.icon}>
               // <SvgIcon
