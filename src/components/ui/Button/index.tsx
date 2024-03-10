@@ -24,7 +24,10 @@ export const Button: FC<ButtonProps> = ({
       {icon && (
         <div
           className={styles.icon}
-          style={{ backgroundImage: `url(../../../../src/assets/${icon})`, ...iconStyle }}></div>
+          style={{
+            backgroundImage: `url(/src/assets/icons/${icon}.svg)`,
+            ...iconStyle,
+          }}></div>
       )}
       {/* {icon && (
         <SvgIcon
@@ -32,6 +35,7 @@ export const Button: FC<ButtonProps> = ({
           svgProp={iconStyle}
         />
       )} */}
+      {/* {Icon} */}
       <p
         className={styles.text}
         // className={variant === 'smooth' ? styles.textSmooth : styles.text}

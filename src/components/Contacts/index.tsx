@@ -1,6 +1,7 @@
 import { Button } from '../ui/Button';
 import styles from './styles.module.css';
 import photo from '../../assets/person_2.png';
+import { socials } from '../../utils/constants';
 // import tg from '../../assets/icons/telegram.svg';
 // import wa from '../../assets/icons/whatsapp.svg';
 // import mail from '../../assets/icons/mail.svg';
@@ -16,12 +17,12 @@ export const Contacts = () => {
           <p className={styles.subtitle}>Отвечу на&nbsp;любые интересующие вопросы</p>
         </div>
         <div className={styles.contacts}>
-          <a
+          {/* <a
             href='https://t.me/OlgaLazarchuk'
             className={styles.link}>
             <Button
               text='Telegram'
-              icon={'icons/telegram.svg'}
+              icon={'telegram'}
             />
           </a>
           <a
@@ -29,7 +30,7 @@ export const Contacts = () => {
             className={styles.link}>
             <Button
               text='WhatsApp'
-              icon={'icons/whatsapp.svg'}
+              icon={'whatsapp'}
             />
           </a>
           <a
@@ -38,10 +39,10 @@ export const Contacts = () => {
             style={{ width: '100%' }}>
             <Button
               text='thebestdesigner@gmail.com'
-              icon={'icons/mail.svg'}
+              icon={'mail'}
             />
-          </a>
-          {/* {socials.map((social) => (
+          </a> */}
+          {socials.map((social) => (
             <a
               href={social.type === 'mail' ? `mailto: ${social.title}` : social.link}
               className={styles.link}
@@ -53,7 +54,7 @@ export const Contacts = () => {
                 style={social.type === 'mail' ? { width: '100%' } : {}}
               />
             </a>
-          ))} */}
+          ))}
         </div>
       </div>
       <img src={photo} />

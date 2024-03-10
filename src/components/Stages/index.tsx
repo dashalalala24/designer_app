@@ -1,5 +1,8 @@
+// import { SVGProps } from 'react';
 import { stages } from '../../utils/constants';
+// import SvgIcon from '../ui/SvgIcon/SvgIcon';
 import styles from './styles.module.css';
+import x from '../../';
 
 export const Stages = () => {
   return (
@@ -15,8 +18,14 @@ export const Stages = () => {
             {stage.icon ? (
               <div
                 className={styles.icon}
-                style={{ backgroundImage: `url(${stage.icon})` }}></div>
+                style={{ backgroundImage: `url(/src/assets/icons/${stage.icon}.svg)` }}></div>
             ) : (
+              // <div className={styles.icon}>
+              // <SvgIcon
+              //   iconName={stage.icon}
+              //   svgProp={styles.icon as SVGProps<SVGSVGElement>}
+              // />
+              // </div>
               <div className={styles.itemHeader}>
                 <p className={styles.number}>{stage.id}</p>
                 <hr className={styles.line} />
