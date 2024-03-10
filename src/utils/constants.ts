@@ -1,8 +1,10 @@
 import cover from '../assets/project_cover.png';
 import pic from '../assets/feedback.png';
+import tic from '../assets/icons/tic.svg?react';
 import telegram from '../assets/icons/telegram.svg?react';
 import whatsapp from '../assets/icons/whatsapp.svg?react';
 import mail from '../assets/icons/mail.svg?react';
+import { FunctionComponent, SVGProps } from 'react';
 
 type navigationItemType = {
   id: number;
@@ -192,7 +194,12 @@ export const slides: slideType[] = [
   },
 ];
 
-type stageType = { id: number; title: string; description: string; icon?: string };
+type stageType = {
+  id: number;
+  title: string;
+  description: string;
+  icon?: FunctionComponent<SVGProps<SVGSVGElement> & { title?: string | undefined }>;
+};
 
 export const stages: stageType[] = [
   {
@@ -241,7 +248,7 @@ export const stages: stageType[] = [
     id: 8,
     title: 'Новоселье',
     description: 'Ваше идеальное пространство готово :)',
-    icon: 'tic',
+    icon: tic,
   },
 ];
 
@@ -249,13 +256,11 @@ type socialType = {
   id: number;
   type: string;
   title: string;
-  icon:
-    | string
-    | React.FunctionComponent<
-        React.SVGProps<SVGSVGElement> & {
-          title?: string | undefined;
-        }
-      >;
+  icon: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
   link?: string;
 };
 

@@ -12,36 +12,14 @@ type ButtonProps = {
           title?: string | undefined;
         }
       >;
-  iconStyle?: CSSProperties;
   variant?: 'smooth' | 'default';
 };
 
-export const Button: FC<ButtonProps> = ({
-  text,
-  style,
-  icon: Icon,
-  iconStyle = {},
-  variant = 'default',
-}) => {
-  console.log(iconStyle);
+export const Button: FC<ButtonProps> = ({ text, style, icon: Icon, variant = 'default' }) => {
   return (
     <button
       className={variant === 'smooth' ? styles.buttonSmooth : styles.button}
       style={style}>
-      {/* {icon && (
-        <div
-          className={styles.icon}
-          style={{
-            backgroundImage: `url("../../../assets/icons/${icon}.svg")`,
-            ...iconStyle,
-          }}></div>
-      )} */}
-      {/* {icon && (
-        <SvgIcon
-          iconName={icon}
-          svgProp={iconStyle}
-        />
-      )} */}
       {Icon && <Icon />}
       <p
         className={styles.text}

@@ -14,16 +14,10 @@ export const Stages = () => {
             className={styles.listItem}
             key={stage.id}>
             {stage.icon ? (
-              <div
-                className={styles.icon}
-                style={{ backgroundImage: `url("../../assets/icons/${stage.icon}.svg")` }}></div>
+              <div className={styles.icon}>
+                <stage.icon />
+              </div>
             ) : (
-              // <div className={styles.icon}>
-              // <SvgIcon
-              //   iconName={stage.icon}
-              //   svgProp={styles.icon as SVGProps<SVGSVGElement>}
-              // />
-              // </div>
               <div className={styles.itemHeader}>
                 <p className={styles.number}>{stage.id}</p>
                 <hr className={styles.line} />
