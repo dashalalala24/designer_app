@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react';
+import { CSSProperties, FC, MouseEventHandler } from 'react';
 import styles from './styles.module.css';
 // import SvgIcon from '../../../assets';
 
@@ -7,7 +7,7 @@ type ButtonProps = {
   style?: CSSProperties;
   icon?: string | React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   variant?: 'smooth' | 'default';
-  onButtonClick?: unknown;
+  onButtonClick?: MouseEventHandler<HTMLButtonElement> | undefined;
 };
 
 export const Button: FC<ButtonProps> = ({
