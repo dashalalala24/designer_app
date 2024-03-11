@@ -20,6 +20,7 @@ export const Header = () => {
               className={styles.listItem}>
               <a
                 href={item.link}
+                target='_blank'
                 className={styles.link}>
                 {item.text}
               </a>

@@ -1,7 +1,12 @@
+import { FC } from 'react';
 import { Button } from '../ui/Button';
 import styles from './styles.module.css';
 
-export const Cover = () => {
+type CoverProps = {
+  openPopup: () => void;
+};
+
+export const Cover: FC<CoverProps> = ({ openPopup }) => {
   return (
     <section className={styles.root}>
       <div className={styles.container}>
@@ -15,6 +20,7 @@ export const Cover = () => {
         <Button
           text='Обсудить проект'
           style={{ marginBottom: '8px' }}
+          onButtonClick={openPopup}
         />
       </div>
     </section>

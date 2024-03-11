@@ -42,21 +42,28 @@ export const Contacts = () => {
               icon={'mail'}
             />
           </a> */}
-          {socials.map((social) => (
-            <a
-              href={social.type === 'mail' ? `mailto: ${social.title}` : social.link}
-              className={styles.link}
-              style={social.type === 'mail' ? { width: '100%' } : {}}>
-              <Button
-                key={social.id}
-                text={social.title}
-                icon={
-                  social.icon as unknown as React.FunctionComponent<React.SVGProps<SVGSVGElement>>
-                }
-                style={social.type === 'mail' ? { width: '100%' } : {}}
-              />
-            </a>
-          ))}
+          {socials.map(
+            (social) =>
+              social.type === 'social' && (
+                <a
+                  key={social.id}
+                  target='_blank'
+                  href={social.name === 'mail' ? `mailto: ${social.title}` : social.link}
+                  className={styles.link}
+                  style={social.name === 'mail' ? { width: '100%' } : {}}>
+                  <Button
+                    key={social.id}
+                    text={social.title}
+                    icon={
+                      social.icon as unknown as React.FunctionComponent<
+                        React.SVGProps<SVGSVGElement>
+                      >
+                    }
+                    style={social.name === 'mail' ? { width: '100%' } : {}}
+                  />
+                </a>
+              )
+          )}
         </div>
       </div>
       <img src={photo} />

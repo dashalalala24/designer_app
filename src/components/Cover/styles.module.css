@@ -1,6 +1,6 @@
 .root {
   width: 100vw;
-  min-height: 934px;
+  min-height: calc(100vh + 24px);
   background-image: url(../../assets/cover.png);
   background-position: center;
   background-size: cover;

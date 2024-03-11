@@ -3,8 +3,17 @@ import styles from './styles.module.css';
 import fileIcon from '../../assets/icons/file.svg?react';
 import { Stages } from '../Stages';
 import { services } from '../../utils/constants';
+import { FC } from 'react';
 
-export const Services = () => {
+type ServicesProps = {
+  openPopup: () => void;
+};
+
+export const Services: FC<ServicesProps> = ({ openPopup }) => {
+  const handleButtonClick = (path: string | undefined) => {
+    window.open(path);
+  };
+
   return (
     <section
       id='services'
@@ -49,6 +58,7 @@ export const Services = () => {
                         >
                       }
                       variant='smooth'
+                      onButtonClick={() => handleButtonClick(service.example)}
                     />
                   </div>
                 </article>
@@ -79,14 +89,16 @@ export const Services = () => {
       </div>
       <div className={styles.connect}>
         <div className={styles.connectText}>
-          <h2 className={styles.connectTitle}>Не понимаете, какая услуга вам подходит?</h2>
+          <h2 className={styles.connectTitle}>Не&nbsp;понимаете, какая услуга вам подходит?</h2>
           <p className={styles.connectSubtitle}>
-            Свяжитесь со мной и я помогу определиться с подходящей услугой под ваш запрос
+            Свяжитесь со&nbsp;мной и&nbsp;я&nbsp;помогу определиться с&nbsp;подходящей услугой под
+            ваш запрос
           </p>
         </div>
         <Button
           text={'Связаться со мной'}
           style={{ padding: '0 25px', margin: '10px 0 0', maxHeight: '60px' }}
+          onButtonClick={openPopup}
         />
       </div>
       <Stages />

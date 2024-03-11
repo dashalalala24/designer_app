@@ -1,8 +1,13 @@
 import styles from './styles.module.css';
 import photo from '../../assets/person.png';
 import { Button } from '../ui/Button';
+import { FC } from 'react';
 
-export const About = () => {
+type AboutProps = {
+  openPopup: () => void;
+};
+
+export const About: FC<AboutProps> = ({ openPopup }) => {
   return (
     <section
       id='about'
@@ -29,6 +34,7 @@ export const About = () => {
           <Button
             text='Обсудить проект'
             style={{ maxWidth: 'max-content' }}
+            onButtonClick={openPopup}
           />
         </div>
       </div>

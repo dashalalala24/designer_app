@@ -17,6 +17,7 @@
 .slider {
   width: calc(100% + 32px);
   margin: 46px 0 0;
+  cursor: grab;
 }
 
 .slide {

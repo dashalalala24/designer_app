@@ -16,8 +16,10 @@ export const Projects = () => {
               to={project.link}
               className={styles.cover}
               style={{ backgroundImage: `url(${project.photo})` }}>
-              <h3 className={styles.name}>{project.title}</h3>
-              <p className={styles.description}>{project.description}</p>
+              <div className={styles.text}>
+                <h3 className={styles.name}>{project.title}</h3>
+                <p className={styles.description}>{project.description}</p>
+              </div>
             </Link>
           ))}
         </div>

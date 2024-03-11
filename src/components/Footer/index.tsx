@@ -1,7 +1,11 @@
 import styles from './styles.module.css';
 import logo from '../../assets/logo/logo_full.svg';
+import { socials } from '../../utils/constants';
 
 export const Footer = () => {
+  const phone = socials.find((social) => social.name === 'phone')?.title || '';
+  const mail = socials.find((social) => social.name === 'mail')?.title || '';
+
   return (
     <footer className={styles.root}>
       <div className={styles.container}>
@@ -12,8 +16,9 @@ export const Footer = () => {
           <div className={styles.textContainer}>
             <a
               className={styles.text}
-              href='tel:+79999999999'>
-              + 7 999 999 99 99
+              target='_blank'
+              href={`tel:${phone}`}>
+              {phone}
             </a>
             <p className={styles.text}>Olga Nikitina</p>
           </div>
@@ -23,13 +28,15 @@ export const Footer = () => {
           style={{ textAlign: 'end' }}>
           <a
             className={styles.text}
-            href='tel:+79999999999'>
-            + 7 999 999 99 99
+            target='_blank'
+            href={`tel:${phone}`}>
+            {phone}
           </a>
           <a
             className={styles.text}
-            href='mailto:thebestdesigner@gmail.com'>
-            thebestdesigner@gmail.com
+            target='_blank'
+            href={`mailto:${mail}`}>
+            {mail}
           </a>
         </div>
       </div>

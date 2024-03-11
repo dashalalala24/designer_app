@@ -11,7 +11,14 @@
   align-items: center;
   color: #000;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .buttonSmooth {
   padding: 10px 16px;
   border: 1px solid #544b48;
@@ -25,17 +32,29 @@
   align-items: center;
   color: #594f4c;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-/* .buttonSmooth:hover {
-  
-} */
+.buttonSmooth:hover {
+  background-color: #f5eeec;
+}
 
 .icon {
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  display: flex;
+}
+
+/* .icon svg {
+  fill: red;
+} */
+
+.button .icon svg path {
+  /* stroke: red; */
+  transition: fill 0.5s ease;
+}
+
+.button:hover .icon svg path {
+  /* stroke: red; */
+  fill: white;
 }
 
 .text {

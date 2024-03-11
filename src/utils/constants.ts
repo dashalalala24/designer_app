@@ -5,6 +5,10 @@ import telegram from '../assets/icons/telegram.svg?react';
 import whatsapp from '../assets/icons/whatsapp.svg?react';
 import mail from '../assets/icons/mail.svg?react';
 
+// import plan from '../assets/plan.pdf';
+import tech_project from '../assets/tech_project.pdf';
+import full_project from '../assets/full_project.pdf';
+
 type navigationItemType = {
   id: number;
   text: string;
@@ -68,7 +72,7 @@ type serviceType = {
   price: string;
   timing: string;
   includes?: string[];
-  examle?: string;
+  example?: string;
 };
 
 export const services: serviceType[] = [
@@ -86,7 +90,8 @@ export const services: serviceType[] = [
     ],
     price: 'от 15 000 р.',
     timing: 'до 2 недель',
-    examle: 'www.google.com',
+    // example: plan,
+    example: 'plan',
   },
   {
     id: 2,
@@ -102,7 +107,7 @@ export const services: serviceType[] = [
     ],
     price: 'от 40 000 р.',
     timing: 'до 1 месяца',
-    examle: 'www.google.com',
+    example: tech_project,
   },
   {
     id: 3,
@@ -119,7 +124,7 @@ export const services: serviceType[] = [
     ],
     price: '2500 руб/кв.м.',
     timing: 'до 2 месяцев',
-    examle: 'www.google.com',
+    example: full_project,
   },
   {
     id: 4,
@@ -254,25 +259,29 @@ export const stages: stageType[] = [
 type socialType = {
   id: number;
   type: string;
+  name: string;
   title: string;
   icon: string | React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   link?: string;
 };
 
 export const socials: socialType[] = [
+  { id: 1, type: 'phone', name: 'phone', title: '+7 977 986 27 68', icon: mail },
   {
-    id: 1,
-    type: 'link',
+    id: 2,
+    type: 'social',
+    name: 'link',
     title: 'Telegram',
     icon: telegram,
     link: 'https://t.me/OlgaLazarchuk',
   },
   {
-    id: 2,
-    type: 'link',
+    id: 3,
+    type: 'social',
+    name: 'link',
     title: 'WhatsApp',
     icon: whatsapp,
-    link: 'https://t.me/OlgaLazarchuk',
+    link: 'https://wa.me/79779862768',
   },
-  { id: 3, type: 'mail', title: 'thebestdesigner@gmail.com', icon: mail },
+  { id: 4, type: 'social', name: 'mail', title: 'nikitina.design@mail.ru', icon: mail },
 ];

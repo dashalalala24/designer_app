@@ -19,6 +19,10 @@
   height: 43px;
 }
 
+.logo:hover {
+  fill: #000;
+}
+
 .nav {
   max-width: 895px;
   width: 100%;
@@ -38,4 +42,20 @@
   font-style: 16px;
   text-decoration: none;
   color: #594f4c;
+  position: relative;
+}
+
+.link:after {
+  position: absolute;
+  bottom: -4px;
+  background-color: #594f4c;
+  display: block;
+  content: '';
+  height: 1px;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.link:hover:after {
+  width: 100%;
 }
