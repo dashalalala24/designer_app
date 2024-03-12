@@ -4,24 +4,34 @@ import styles from './styles.module.css';
 
 type CoverProps = {
   openPopup: () => void;
+  title?: string;
+  subtitle?: string;
+  pic?: string;
+  footage?: string;
 };
 
-export const Cover: FC<CoverProps> = ({ openPopup }) => {
+export const Cover: FC<CoverProps> = ({ openPopup, title, subtitle, pic, footage }) => {
   return (
-    <section className={styles.root}>
+    <section
+      className={styles.root}
+      style={pic ? { backgroundImage: `url(${pic})` } : {}}>
       <div className={styles.container}>
         <div className={styles.text}>
-          <h1 className={styles.title}>Интерьеры, в&nbsp;которых&nbsp;комфортно жить</h1>
+          <h1 className={styles.title}>{title ?? 'Интерьеры, в которых комфортно жить'}</h1>
           <p className={styles.subtitle}>
-            Функциональные планировки и&nbsp;продуманные дизайн-проекты, чтобы комфортно жить
-            и&nbsp;расслабляться. еще немного текста о&nbsp;чем-нибудь сюда напишем
+            {subtitle ??
+              'Функциональные планировки и продуманные дизайн-проекты, чтобы комфортно жить и расслабляться. еще немного текста о чем-нибудь сюда напишем'}
           </p>
         </div>
-        <Button
-          text='Обсудить проект'
-          style={{ marginBottom: '8px' }}
-          onButtonClick={openPopup}
-        />
+        {footage ? (
+          <p className={styles.footage}>{footage}</p>
+        ) : (
+          <Button
+            text='Обсудить проект'
+            style={{ marginBottom: '8px' }}
+            onButtonClick={openPopup}
+          />
+        )}
       </div>
     </section>
   );

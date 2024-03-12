@@ -1,0 +1,56 @@
+.root {
+  background-image: url(../../assets/gradient.png);
+  background-size: cover;
+  width: 100vw;
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.block {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.photo {
+  object-fit: cover;
+}
+
+.twoVertical {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  /* gap: 56px; */
+  justify-content: space-between;
+  max-height: 707px;
+}
+
+.vertical {
+  max-width: 560px;
+}
+
+.oneHorizontalFullWidth {
+  max-width: 1440px;
+}
+
+.oneHorizontalFullWidth .photo {
+  max-width: 1440px;
+}
+
+.horizontal {
+  max-width: 1272px;
+  width: 100%;
+}
+
+.twoSquare {
+  max-width: 1272px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-height: 707px;
+}
+
+.square {
+  max-width: 545px;
+}

@@ -1,5 +1,6 @@
 // import { SVGProps } from 'react';
 import { stages } from '../../utils/constants';
+import { SectionTitle, SectionTitleColor } from '../ui/SectionTitle';
 import styles from './styles.module.css';
 
 export const Stages = () => {
@@ -7,7 +8,10 @@ export const Stages = () => {
     <section
       id='stages'
       className={styles.root}>
-      <h2 className={styles.title}>Как мы будем работать</h2>
+      <SectionTitle
+        text='Как мы будем работать'
+        color={SectionTitleColor.LIGHT}
+      />
       <ul className={styles.list}>
         {stages.map((stage) => (
           <li

@@ -4,6 +4,7 @@ import fileIcon from '../../assets/icons/file.svg?react';
 import { Stages } from '../Stages';
 import { services } from '../../utils/constants';
 import { FC } from 'react';
+import { SectionTitle, SectionTitleColor } from '../ui/SectionTitle';
 
 type ServicesProps = {
   openPopup: () => void;
@@ -19,7 +20,10 @@ export const Services: FC<ServicesProps> = ({ openPopup }) => {
       id='services'
       className={styles.root}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Базовые услуги</h2>
+        <SectionTitle
+          text='Базовые услуги'
+          color={SectionTitleColor.LIGHT}
+        />
         <div className={styles.cardsContainer}>
           {services.map(
             (service) =>
@@ -66,7 +70,10 @@ export const Services: FC<ServicesProps> = ({ openPopup }) => {
           )}
         </div>
         <div className={styles.container}>
-          <h2 className={styles.title}>Дополнительные услуги</h2>
+          <SectionTitle
+            text='Дополнительные услуги'
+            color={SectionTitleColor.LIGHT}
+          />
           <div className={styles.cardsContainer}>
             {services.map(
               (service) =>

@@ -19,7 +19,7 @@
   padding: 69px 0 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 66px 36px;
 }
 

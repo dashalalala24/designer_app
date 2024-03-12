@@ -1,5 +1,6 @@
 import cover from '../assets/project_cover.png';
 import pic from '../assets/feedback.png';
+import plan from '../assets/plan.png';
 import tic from '../assets/icons/tic.svg?react';
 import telegram from '../assets/icons/telegram.svg?react';
 import whatsapp from '../assets/icons/whatsapp.svg?react';
@@ -9,6 +10,20 @@ import mail from '../assets/icons/mail.svg?react';
 import tech_project from '../assets/tech_project.pdf';
 import full_project from '../assets/full_project.pdf';
 
+import krasnodar_0 from '../assets/project_4/krasnodar_0.png';
+import krasnodar_1 from '../assets/project_4/krasnodar_1.png';
+import krasnodar_2 from '../assets/project_4/krasnodar_2.png';
+import krasnodar_3 from '../assets/project_4/krasnodar_3.png';
+import krasnodar_4 from '../assets/project_4/krasnodar_4.png';
+import krasnodar_5 from '../assets/project_4/krasnodar_5.png';
+import krasnodar_6 from '../assets/project_4/krasnodar_6.png';
+import krasnodar_7 from '../assets/project_4/krasnodar_7.png';
+import krasnodar_8 from '../assets/project_4/krasnodar_8.png';
+import krasnodar_9 from '../assets/project_4/krasnodar_9.png';
+import krasnodar_10 from '../assets/project_4/krasnodar_10.png';
+import krasnodar_11 from '../assets/project_4/krasnodar_11.png';
+import krasnodar_12 from '../assets/project_4/krasnodar_12.png';
+
 type navigationItemType = {
   id: number;
   text: string;
@@ -16,51 +31,219 @@ type navigationItemType = {
 };
 
 export const navigation: navigationItemType[] = [
-  { id: 1, text: 'Обо мне', link: '#about' },
-  { id: 2, text: 'Проекты', link: '#projects' },
-  { id: 3, text: 'Отзывы', link: '#feedback' },
-  { id: 4, text: 'Услуги', link: '#services' },
-  { id: 5, text: 'Этапы работы', link: '#stages' },
-  { id: 6, text: 'Вопросы', link: '#faq' },
-  { id: 7, text: 'Контакты', link: '#contacts' },
+  { id: 1, text: 'Обо мне', link: '/#about' },
+  { id: 2, text: 'Проекты', link: '/#projects' },
+  { id: 3, text: 'Отзывы', link: '/#feedback' },
+  { id: 4, text: 'Услуги', link: '/#services' },
+  { id: 5, text: 'Этапы работы', link: '/#stages' },
+  { id: 6, text: 'Вопросы', link: '/#faq' },
+  { id: 7, text: 'Контакты', link: '/#contacts' },
 ];
 
-type projectType = {
+export enum photoType {
+  SQUARE = 'square',
+  VERTICAL = 'vertical',
+  HORIZONTAL = 'horizontal',
+  HORIZONTALFULL = 'horizontalFull',
+}
+
+export type projectType = {
   id: number;
   title: string;
+  subtitle: string;
   description: string;
+  about: string;
   link: string;
-  photo: string;
+  mainPhoto: string;
+  footage: string;
+  planPics: {
+    id: number;
+    photo: string;
+  }[];
+  details: {
+    name: string;
+    text: string;
+  }[];
+  processPics: {
+    id: number;
+    photo: string;
+  }[];
+  photos: {
+    id: number;
+    type: photoType;
+    photo: string;
+  }[];
 };
 
 export const projects: projectType[] = [
   {
     id: 1,
     title: 'Квартира в Москве',
+    subtitle: 'Для молодой семьи из 3х человек',
     description: 'пару слов о проекте, для кого, какая задумка что-то типа тизера',
+    about:
+      'Интерьер двухуровневой квартиры в светло-бежевых оттенках создавался для молодой пары. Большую часть времени они проводят на работе и дома им хочется отдохнуть. Поэтому наша основная задача в проекте — отойти от холодного минимализма, придать мягкости и тепла. Мы добились этого через цвет, фактуры. Так же предусмотрели мягкое вечернее освещение для расслабленной обстановки.',
     link: '#',
-    photo: cover,
+    mainPhoto: cover,
+    footage: '100 кв.м.',
+    planPics: [
+      { id: 1, photo: plan },
+      { id: 2, photo: plan },
+      { id: 3, photo: plan },
+    ],
+    details: [
+      { name: 'Площадь', text: '100 кв.м.' },
+      { name: 'Местоположение', text: 'Центр' },
+      { name: 'Сроки', text: '2 месяца' },
+      { name: 'Бюджет', text: 'от 300 тыс.' },
+    ],
+    processPics: [
+      { id: 1, photo: cover },
+      { id: 2, photo: cover },
+      { id: 3, photo: cover },
+    ],
+    photos: [
+      { id: 1, type: photoType.SQUARE, photo: krasnodar_1 },
+      { id: 2, type: photoType.SQUARE, photo: krasnodar_2 },
+      { id: 3, type: photoType.VERTICAL, photo: krasnodar_0 },
+      { id: 4, type: photoType.VERTICAL, photo: krasnodar_4 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_11 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_12 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_3 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_7 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_5 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_6 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_8 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_9 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_10 },
+    ],
   },
   {
     id: 2,
-    title: 'Квартира в Москве',
+    title: 'Квартира в Краснодаре',
+    subtitle: 'Для молодой семьи из 3х человек',
     description: 'пару слов о проекте, для кого, какая задумка что-то типа тизера',
+    about:
+      'Интерьер двухуровневой квартиры в светло-бежевых оттенках создавался для молодой пары. Большую часть времени они проводят на работе и дома им хочется отдохнуть. Поэтому наша основная задача в проекте — отойти от холодного минимализма, придать мягкости и тепла. Мы добились этого через цвет, фактуры. Так же предусмотрели мягкое вечернее освещение для расслабленной обстановки.',
     link: '#',
-    photo: cover,
+    mainPhoto: cover,
+    footage: '200 кв.м.',
+    planPics: [
+      { id: 1, photo: plan },
+      { id: 2, photo: plan },
+      { id: 3, photo: plan },
+    ],
+    details: [
+      { name: 'Площадь', text: '100 кв.м.' },
+      { name: 'Местоположение', text: 'Центр' },
+      { name: 'Сроки', text: '2 месяца' },
+      { name: 'Бюджет', text: 'от 300 тыс.' },
+    ],
+    processPics: [
+      { id: 1, photo: cover },
+      { id: 2, photo: cover },
+      { id: 3, photo: cover },
+    ],
+    photos: [
+      { id: 1, type: photoType.SQUARE, photo: krasnodar_1 },
+      { id: 2, type: photoType.SQUARE, photo: krasnodar_2 },
+      { id: 3, type: photoType.VERTICAL, photo: krasnodar_0 },
+      { id: 4, type: photoType.VERTICAL, photo: krasnodar_4 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_11 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_12 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_3 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_7 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_5 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_6 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_8 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_9 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_10 },
+    ],
   },
   {
     id: 3,
-    title: 'Квартира в Москве',
+    title: 'Квартира в Ярославле',
+    subtitle: 'Для молодой семьи из 3х человек',
     description: 'пару слов о проекте, для кого, какая задумка что-то типа тизера',
+    about:
+      'Интерьер двухуровневой квартиры в светло-бежевых оттенках создавался для молодой пары. Большую часть времени они проводят на работе и дома им хочется отдохнуть. Поэтому наша основная задача в проекте — отойти от холодного минимализма, придать мягкости и тепла. Мы добились этого через цвет, фактуры. Так же предусмотрели мягкое вечернее освещение для расслабленной обстановки.',
     link: '#',
-    photo: cover,
+    mainPhoto: cover,
+    footage: '300 кв.м.',
+    planPics: [
+      { id: 1, photo: plan },
+      { id: 2, photo: plan },
+      { id: 3, photo: plan },
+    ],
+    details: [
+      { name: 'Площадь', text: '100 кв.м.' },
+      { name: 'Местоположение', text: 'Центр' },
+      { name: 'Сроки', text: '2 месяца' },
+      { name: 'Бюджет', text: 'от 300 тыс.' },
+    ],
+    processPics: [
+      { id: 1, photo: cover },
+      { id: 2, photo: cover },
+      { id: 3, photo: cover },
+    ],
+    photos: [
+      { id: 1, type: photoType.SQUARE, photo: krasnodar_1 },
+      { id: 2, type: photoType.SQUARE, photo: krasnodar_2 },
+      { id: 3, type: photoType.VERTICAL, photo: krasnodar_0 },
+      { id: 4, type: photoType.VERTICAL, photo: krasnodar_4 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_11 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_12 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_3 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_7 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_5 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_6 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_8 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_9 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_10 },
+    ],
   },
   {
     id: 4,
-    title: 'Квартира в Москве',
+    title: 'Квартира на Луне',
+    subtitle: 'Для молодой семьи из 3х человек',
     description: 'пару слов о проекте, для кого, какая задумка что-то типа тизера',
+    about:
+      'Интерьер двухуровневой квартиры в светло-бежевых оттенках создавался для молодой пары. Большую часть времени они проводят на работе и дома им хочется отдохнуть. Поэтому наша основная задача в проекте — отойти от холодного минимализма, придать мягкости и тепла. Мы добились этого через цвет, фактуры. Так же предусмотрели мягкое вечернее освещение для расслабленной обстановки.',
     link: '#',
-    photo: cover,
+    mainPhoto: krasnodar_1,
+    footage: '400 кв.м.',
+    planPics: [
+      { id: 1, photo: plan },
+      { id: 2, photo: plan },
+      { id: 3, photo: plan },
+      { id: 4, photo: plan },
+    ],
+    details: [
+      { name: 'Площадь', text: '100 кв.м.' },
+      { name: 'Местоположение', text: 'Центр' },
+      { name: 'Сроки', text: '2 месяца' },
+      { name: 'Бюджет', text: 'от 300 тыс.' },
+    ],
+    processPics: [
+      { id: 1, photo: cover },
+      { id: 2, photo: cover },
+      { id: 3, photo: cover },
+    ],
+    photos: [
+      { id: 1, type: photoType.SQUARE, photo: krasnodar_1 },
+      { id: 2, type: photoType.SQUARE, photo: krasnodar_2 },
+      { id: 3, type: photoType.VERTICAL, photo: krasnodar_0 },
+      { id: 4, type: photoType.VERTICAL, photo: krasnodar_4 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_11 },
+      { id: 5, type: photoType.VERTICAL, photo: krasnodar_12 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_3 },
+      { id: 5, type: photoType.HORIZONTALFULL, photo: krasnodar_7 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_5 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_6 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_8 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_9 },
+      { id: 5, type: photoType.HORIZONTAL, photo: krasnodar_10 },
+    ],
   },
 ];
 
@@ -164,14 +347,14 @@ export const services: serviceType[] = [
   },
 ];
 
-type slideType = {
+type opinionType = {
   id: number;
   photo: string;
   feedback: string;
   author: string;
 };
 
-export const slides: slideType[] = [
+export const opinions: opinionType[] = [
   {
     id: 1,
     photo: pic,

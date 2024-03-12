@@ -2,6 +2,7 @@ import { Button } from '../ui/Button';
 import styles from './styles.module.css';
 import photo from '../../assets/person_2.png';
 import { socials } from '../../utils/constants';
+import { SectionTitle } from '../ui/SectionTitle';
 // import tg from '../../assets/icons/telegram.svg';
 // import wa from '../../assets/icons/whatsapp.svg';
 // import mail from '../../assets/icons/mail.svg';
@@ -13,35 +14,10 @@ export const Contacts = () => {
       className={styles.root}>
       <div className={styles.content}>
         <div className={styles.text}>
-          <h1 className={styles.title}>Связь со&nbsp;мной</h1>
+          <SectionTitle text='Связь со&nbsp;мной' />
           <p className={styles.subtitle}>Отвечу на&nbsp;любые интересующие вопросы</p>
         </div>
         <div className={styles.contacts}>
-          {/* <a
-            href='https://t.me/OlgaLazarchuk'
-            className={styles.link}>
-            <Button
-              text='Telegram'
-              icon={'telegram'}
-            />
-          </a>
-          <a
-            href='https://t.me/OlgaLazarchuk'
-            className={styles.link}>
-            <Button
-              text='WhatsApp'
-              icon={'whatsapp'}
-            />
-          </a>
-          <a
-            href='mailto:thebestdesigner@gmail.com'
-            className={styles.link}
-            style={{ width: '100%' }}>
-            <Button
-              text='thebestdesigner@gmail.com'
-              icon={'mail'}
-            />
-          </a> */}
           {socials.map(
             (social) =>
               social.type === 'social' && (

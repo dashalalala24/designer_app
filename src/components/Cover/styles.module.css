@@ -50,3 +50,12 @@
   flex-direction: column;
   color: #594f4c;
 }
+
+.footage {
+  font-family: Montserrat;
+  color: #594f4c;
+  font-weight: 500;
+  font-style: 20px;
+  margin: 0;
+  padding: 0;
+}

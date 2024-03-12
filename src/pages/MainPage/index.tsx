@@ -10,22 +10,9 @@ import { Popup } from '../../components/Popup';
 import { Projects } from '../../components/Projects';
 import { Services } from '../../components/Services';
 import styles from './styles.module.css';
-// import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export const MainPage = () => {
-  // const main = document.querySelector('body');
-
   const [isPopupOpened, setIsPopupOpened] = useState(false);
-
-  // useEffect(() => {
-  //   if (isPopupOpened && main) {
-  //     disableBodyScroll(main);
-  //   }
-
-  //   if (!isPopupOpened && main) {
-  //     enableBodyScroll(main);
-  //   }
-  // }, [isPopupOpened, main]);
 
   const togglePopup = () => {
     setIsPopupOpened(!isPopupOpened);
@@ -39,10 +26,7 @@ export const MainPage = () => {
 
   return (
     <>
-      <div
-        className={styles.root}
-        // style={isPopupOpened ? { overflow: 'hidden' } : {}}
-      >
+      <div className={styles.root}>
         <Header />
         <main className={styles.main}>
           <Cover openPopup={togglePopup} />

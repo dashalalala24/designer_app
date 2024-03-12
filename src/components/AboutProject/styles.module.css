@@ -1,0 +1,66 @@
+.root {
+  margin: 112px auto 194px;
+  max-width: 1272px;
+  width: 100%;
+  color: #594f4c;
+  display: flex;
+  gap: 114px;
+}
+
+.slider {
+  max-width: 465px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 121%;
+  max-width: 1100px;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 121%;
+  margin: 0;
+  padding: 32px 0 0;
+  max-width: 580px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 580px;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  gap: 24px 43px;
+}
+
+.detail {
+  width: 168px;
+}
+
+.detailTitle {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.detailText {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px 0 0;
+}

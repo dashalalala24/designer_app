@@ -1,13 +1,16 @@
-.root {
-  padding: 110px 0;
-  margin: 0 auto;
-  max-width: 1272px;
-  overflow: hidden;
-}
-/* 
+/* .root {
+  display: flex;
+  flex-direction: column;
+} */
+
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+.containerBottom {
+  padding: 20px 0 0;
+  justify-content: center;
 }
 
 .buttons {
@@ -29,6 +32,16 @@
   transition: all 0.5s ease;
 }
 
+.buttonTop {
+  margin: 0 0 46px;
+}
+
+.buttonBottom {
+  width: 50px;
+  height: 50px;
+  background-size: 31px;
+}
+
 .button:hover {
   background-color: #b9a39b;
 }
@@ -46,13 +59,11 @@
   font-size: 48px;
   line-height: 130%;
   color: #594f4c;
-  margin: 0;
   padding: 0;
 }
 
 .slider {
   width: calc(100% + 32px);
-  margin: 46px 0 0;
   cursor: grab;
 }
 
@@ -95,4 +106,4 @@
   text-align: end;
   font-family: 'Montserrat';
   font-style: italic;
-} */
+}

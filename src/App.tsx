@@ -1,10 +1,11 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import './vendor/slick-carousel/slick/slick.css';
 import './vendor/slick-carousel/slick/slick-theme.css';
 
 import { MainPage } from './pages/MainPage';
+import { ProjectPage } from './pages/ProjectPage';
 
 const App = () => {
   return (
@@ -21,7 +22,10 @@ const RouteWrapper = () => {
         path='/'
         Component={MainPage}
       />
-      {/* <Route path="/about" Component={About} /> */}
+      <Route
+        path='/project/:id'
+        Component={ProjectPage}
+      />
     </Routes>
   );
 };

@@ -1,0 +1,11 @@
+.root {
+  width: 100%;
+  font-family: 'Inter', 'Montserrat';
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
