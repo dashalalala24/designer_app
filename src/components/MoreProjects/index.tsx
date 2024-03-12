@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { projects } from '../../utils/constants';
 import styles from './styles.module.css';
-import { SectionTitle, SectionTitleColor } from '../ui/SectionTitle';
+import { SectionTitle } from '../ui/SectionTitle';
 
 export const MoreProjects = () => {
   const { id: projectId } = useParams<{ id: string }>();
